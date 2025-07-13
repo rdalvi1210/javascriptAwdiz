@@ -215,7 +215,6 @@
 // }
 // console.log(fact)
 
-
 // ================== armstrong ================
 
 // let num = 9475;
@@ -235,8 +234,8 @@
 //   let pow = 1;
 //   for (i = 1; i <= count; i++) {
 //     pow *= digit;
-//     }
-//     sum += pow;
-//     temp = (temp - digit) / 10;
+//   }
+//   sum += pow;
+//   temp = (temp - digit) / 10;
 // }
-// console.log(num==sum)
+// console.log(num === sum);
