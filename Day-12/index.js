@@ -24,11 +24,17 @@ for (let i = 1; i <= range; i++) {
 }
 
 // Iteration 1 : i=1 (i <= range: T) -> j=1 (j <= i: T) -> j=2 (j <= i: F) | line 1: "* "
+
 // Iteration 2 : i=2 (i <= range: T) -> j=1 (j <= i: T) -> j=2 (j <= i: T) -> j=3 (j <= i: F) | line 2: "* * "
 // Iteration 3 : i=3 (i <= range: T) -> j=1 (j <= i: T) -> j=2 (j <= i: T) -> j=3 (j <= i: T) -> j=4 (j <= i: F) | line 3: "* * * "
+
 // Iteration 4 : i=4 (i <= range: T) -> j=1 (j <= i: T) -> j=2 (j <= i: T) -> j=3 (j <= i: T) -> j=4 (j <= i: T) -> j=5 (j <= i: F) | line 4: "* * * * "
+
 // Iteration 5 : i=5 (i <= range: T) -> j=1 (j <= i: T) -> j=2 (j <= i: T) -> j=3 (j <= i: T) -> j=4 (j <= i: T) -> j=5 (j <= i: T) -> j=6 (j <= i: F) | line 5: "* * * * * "
 // Iteration 6 : i=6 (i <= range: F) -> loop ends with condition
+
+
+
 
 // Pyramid pattern
 //   *
@@ -64,6 +70,9 @@ for (let i = 1; i <= n; i++) {
 // -> star=1 (T) -> star=2 (T) -> star=3 (T) -> star=4 (T) -> star=5 (T) -> star=6 (F) -> line 3: "*****"
 
 // Iteration 4 : i=4 (i <= n: F) -> loop ends
+
+
+
 
 // 2
 // 2 4
