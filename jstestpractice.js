@@ -230,3 +230,116 @@
 // }
 
 // console.log(obj2);
+
+// function findfibIndex(n) {
+//   if (n == 0) return 0;
+//   if (n == 1) return 0;
+
+//   let prev = 0;
+//   let curr = 1;
+//   for (i = 2; i <= n; i++) {
+//     let next = prev + curr;
+//     prev = curr;
+//     curr = next;
+//   }
+//     return curr;
+// }
+
+// console.log(findfibIndex(10));
+
+// function findfrequency(array) {
+//   let obj = {};
+
+//   for (i = 0; i < array.length; i++) {
+//     if (obj[array[i]]) {
+//       obj[array[i]]++;
+//     } else {
+//       obj[array[i]] = 1;
+//     }
+//   }
+//   return obj;
+// }
+
+// console.log(findfrequency([1, 2, 2, 3]));
+
+// let array = [100, 99, 97];
+// for (i = 0; i < array.length - 1; i++) {
+//   for (j = 0; j <= 1 - i; j++) {
+//     if (array[j] > array[j + 1]) {
+//       var temp = array[j];
+//       array[j] = array[j + 1];
+//       array[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(array);
+
+// function facto(n) {
+//   let fact = 1;
+//   while (n > 0) {
+//     fact = fact * n;
+//     n--;
+//   }
+//   return fact;
+// }
+// console.log(facto(5));
+
+// function isPrime(n) {
+//   for (i = 2; i * i <= n; i++) {
+//     if (n % i == 0) {
+//       return false;
+//     }
+//     }
+//     return true;
+// }
+
+// console.log(isPrime(4));
+
+// function isarmSrtong(n) {
+//   let copy = n;
+//   let temp = n;
+//   let countDigit = 0;
+//   while (temp > 0) {
+//     countDigit++;
+//     temp = Math.floor(temp / 10);
+//   }
+
+//   temp = n;
+//   let sum = 0;
+//   while (temp > 0) {
+//     let lastDigit = temp % 10;
+//     let power = 1;
+//     for (i = 1; i <= countDigit; i++) {
+//       power = power * lastDigit;
+//     }
+//     sum = sum + power;
+//     temp = Math.floor(temp / 10);
+//   }
+//   return sum === copy;
+// }
+// console.log(isarmSrtong(153));
+
+// let str = "Hello";
+// let reversed = "";
+// for (i = str.length-1; i >= 0; i--) {
+//   reversed += str[i];
+// }
+// console.log(reversed);
+
+// console.log(typeof null);
+
+// class Teacher {
+//   constructor(name, subject) {
+//     this.name = name;
+//     this.subject = subject;
+//     }
+//     greet() {
+//         console.log(this.name)
+//     }
+// }
+
+// let func = new Teacher("Aww", "ada");
+// let func1 = new Teacher("Awasdfg", "adsdfdsfa");
+// console.log(func.greet());
+
+
