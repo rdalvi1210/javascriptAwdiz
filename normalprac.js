@@ -186,17 +186,83 @@
 //   }
 // }
 
-const firstNonrepeating = (str) => {
-  let freq = {};
+// const firstNonrepeating = (str) => {
+//   let freq = {};
 
-  for (let char of str) {
-    freq[char] = (freq[char] || 0) + 1;
-  }
-  for (let char of str) {
-    if (freq[char] === 1) return char;
-  }
+//   for (let char of str) {
+//     freq[char] = (freq[char] || 0) + 1;
+//   }
+//   for (let char of str) {
+//     if (freq[char] === 1) return char;
+//   }
 
-  return freq;
-};
+//   return freq;
+// };
 
-console.log(firstNonrepeating("ssttrr"));
+// console.log(firstNonrepeating("sstrrp"));
+
+// rightshift by 2
+
+// let arr = [1, 2, 3, 4];
+// let k = 7;
+// k = k % arr.length;
+// rightShift(0, k - 1);
+// rightShift(k, arr.length - 1);
+// rightShift(0, arr.length - 1);
+// console.log(arr);
+
+// function rightShift(i, j) {
+//   while (i < j) {
+//     var temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+//   }
+// }
+
+// let arr1 = [1, 3, 5, 7];
+// let arr2 = [2, 4, 6, 8, 10, 11];
+// let i = k = j = 0;
+// let merge = [];
+// while (i < arr1.length - 1 && j < arr2.lenght - 1) {
+//   if (arr1[i] > arr2[j]) {
+//     merge[k] = arr2[j];
+//     k++;
+//     j++;
+//   } else {
+//     merge[k] = arr1[i];
+//     k++;
+//     i++;
+//   }
+// }
+
+// while (i < arr1.length) {
+//   merge[k] = arr1[i];
+//   k++;
+//   i++;
+// }
+// while (j < arr2.length - 1) {
+//   merge[k] = arr2[j];
+//   k++;
+//   j++;
+// }
+
+// console.log(merge);
+
+// let arr = [0, 1, 1, 0, 3, 0];
+
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] == 0) {
+//     if (i != j) {
+//       var temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
