@@ -266,3 +266,82 @@
 //   i++;
 // }
 // console.log(arr);
+
+// function fobonacci(n) {
+//   if (n == 0) return 0;
+//   if (n == 1) return 1;
+
+//   let num1 = 0;
+//   let num2 = 1;
+
+//   let num3;
+//   for (i = 2; i <= n; i++) {
+//     num3 = num1 + num2;
+//     num1 = num2;
+//     num2 = num3;
+//   }
+//   return num3;
+// }
+
+// console.log(fobonacci(6))
+
+// Input 1: [1, 2, 2, 3]
+// Output 1: {1:1, 2:2, 3:1}
+// Input 2: [4, 4, 4]
+// Output 2: {4:3}
+
+let checkFrequency = (array) => {
+  let obj = {};
+  for (i = 0; i < array.length; i++) {
+    if (obj[array[i]]) {
+      obj[array[i]]++;
+    } else {
+      obj[array[i]] = 1;
+    }
+  }
+  return obj;
+};
+
+// Swap keys and values in an object
+// Input: {a: 1, b: 2, c: 3}
+// Output: {1: 'a', 2: 'b', 3: 'c'}
+
+const swapKeysAndValues = (obj) => {
+  let swappedObj = {};
+
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      swappedObj[obj[key]] = key;
+    }
+  }
+
+  return swappedObj;
+};
+
+// Example usage:
+console.log(swapKeysAndValues({ a: 1, b: 2, c: 3 })); // {1: 'a', 2: 'b', 3: 'c'}
+console.log(swapKeysAndValues({ name: "John", age: 30, city: "NYC" })); // {John: 'name', 30: 'age', NYC: 'city'}
+
+// Alternative without any built-in methods (pure manual approach)
+const swapKeysAndValuesManual = (obj) => {
+  let swappedObj = {};
+
+  // Get all keys manually without Object.keys()
+  let keys = [];
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      keys[keys.length] = key; // Manual push without using push()
+    }
+  }
+
+  // Swap keys and values manually
+  for (let i = 0; i < keys.length; i++) {
+    let currentKey = keys[i];
+    let currentValue = obj[currentKey];
+    swappedObj[currentValue] = currentKey;
+  }
+
+  return swappedObj;
+};
+
+console.log(swapKeysAndValuesManual({ x: 10, y: 20, z: 30 })); // {10: 'x', 20: 'y', 30: 'z'}
